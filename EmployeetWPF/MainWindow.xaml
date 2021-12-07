@@ -1,0 +1,20 @@
+﻿<Window x:Class="EmployeetWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeetWPF"
+        mc:Ignorable="d"
+        Title="Employeet" Height="210" Width="200" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Jméno"/>
+            <TextBox x:Name="firstnameBox" Margin="0 5"/>
+            <TextBlock Text="Příjmení"/>
+            <TextBox x:Name="lastnameBox" Margin="0 5"/>
+            <Button Content="Generate Id" Margin="0 5" x:Name="generateIdBtn" Click="generateIdBtn_Click"/>
+            <TextBlock x:Name="generatedId" Text="" FontSize="20"  Margin="0 5" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
